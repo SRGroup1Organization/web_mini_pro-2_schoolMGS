@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from coderthemes.com/ubold_1.5/light/dashboard_2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jun 2016 06:14:29 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+
+    <title>School System MGR</title>
+    <!-- X-editable css -->
+    <link type="text/css" href="assets/plugins/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet">
+    <!--Morris Chart CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <script src="assets/js/modernizr.min.js"></script>
+</head>
+
+<body class="fixed-left">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="index.html" class="logo"><i class="icon-magnet icon-c-logo"></i><span>School system</span></a>
+                </div>
+            </div>
+
+            <!-- Button mobile view to collapse sidebar menu -->
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="">
+                        <div class="pull-left">
+                            <button class="button-menu-mobile open-left">
+                                    <i class="ion-navicon"></i>
+                                </button>
+                            <span class="clearfix"></span>
+                        </div>
+
+                        <form role="search" class="navbar-left app-search pull-left hidden-xs">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </form>
+
+
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle"> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)"><i class="ti-user m-r-5"></i> Profile</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-settings m-r-5"></i> Settings</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-lock m-r-5"></i> Lock screen</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+
+        <!-- ========== Left Sidebar Start ========== -->
+
+        <div class="left side-menu">
+            <div class="sidebar-inner slimscrollleft">
+                <!--- Divider -->
+                <div id="sidebar-menu">
+                    <ul>
+
+                        <li class="text-muted menu-title">Navigation</li>
+
+                        <li>
+                            <a href="index.html" class="waves-effect"><i class="ti-home"></i> <span> Dashboard </span> </a>
+                        </li>
+
+                        <li class="has_sub">
+                            <a href="#" class="waves-effect active"><i class="fa fa-graduation-cap"></i> <span> Student </span> </a>
+                            <ul class="list-unstyled">
+                                <li><a href="new_student.html"><i class="fa fa-plus-square active"></i>New Student</a></li>
+                                <li><a href="student_list.html"><i class="fa fa-list-alt"></i>Student List</a></li>
+                                <li><a href="ui-portlets.html"><i class="fa fa-check-square-o"></i>Attendance</a></li>
+                                <li><a href="ui-checkbox-radio.html"><i class="fa fa-adn"></i>Score</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has_sub">
+                            <a href="#" class="waves-effect"><i class="fa fa-university"></i><span> Instructor </span> </a>
+                            <ul class="list-unstyled">
+                                <li><a href="components-grid.html"><i class="fa fa-plus-circle"></i>New Instructor</a></li>
+                                <li><a href="components-widgets.html"><i class="fa fa-bars"></i>Instructor List</a></li>
+                                <li><a href="components-nestable-list.html"><i class="fa fa-adn"></i>Attendance</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="subject.html" class="waves-effect"><i class="fa fa-book"></i> <span> Course </span> </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="waves-effect"><i class="fa fa-user"></i> <span> User </span> </a>
+                        </li>
+
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <!--your work start from here-->
+                            <div class="col-lg-6 card-box" style="width:100%">
+                                <form class="form-horizontal group-border-dashed" action="#">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">First Name:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Last Name</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required placeholder="Last Name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Date of Birth</label>
+                                        <div class="col-sm-6">
+                                            <input type="date" class="form-control" required placeholder="Last Name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">E-Mail</label>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="form-control" required parsley-type="email" placeholder="Enter a valid e-mail" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Social Number</label>
+                                        <div class="col-sm-6">
+                                            <input data-parsley-type="digits" type="text" class="form-control" required placeholder="Enter only digits" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Phone Number</label>
+                                        <div class="col-sm-6">
+                                            <input data-parsley-type="number" type="text" class="form-control" required placeholder="Enter only numbers" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">University</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required placeholder="University" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Address</label>
+                                        <div class="col-sm-6">
+                                            <textarea required class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Father Name:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required placeholder="Father Name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Phone Number</label>
+                                        <div class="col-sm-6">
+                                            <input data-parsley-type="number" type="text" class="form-control" required placeholder="Enter only numbers" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Mother Name:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required placeholder="Mother Name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Phone Number</label>
+                                        <div class="col-sm-6">
+                                            <input data-parsley-type="number" type="text" class="form-control" required placeholder="Enter only numbers" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-3 col-sm-9 m-t-15">
+                                            <button type="submit" class="btn btn-primary">
+															Submit
+														</button>
+                                            <button type="reset" class="btn btn-default m-l-5">
+															Cancel
+														</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- container -->
+        </div>
+        <!-- content -->
+
+        <footer class="footer text-right">
+            2015 © Ubold.
+        </footer>
+    </div>
+
+
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/jquery.blockUI.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <!-- jQuery  -->
+    <script src="assets/plugins/moment/moment.js"></script>
+
+
+    <script src="assets/plugins/morris/morris.min.js"></script>
+    <script src="assets/plugins/raphael/raphael-min.js"></script>
+
+    <script src="assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Todojs  -->
+    <script src="assets/pages/jquery.todo.js"></script>
+
+    <!-- chatjs  -->
+    <script src="assets/pages/jquery.chat.js"></script>
+
+    <script src="assets/plugins/peity/jquery.peity.min.js"></script>
+
+    <script src="assets/js/jquery.core.js"></script>
+    <script src="assets/js/jquery.app.js"></script>
+
+    <script src="assets/pages/jquery.dashboard_2.js"></script>
+    <!-- XEditable Plugin -->
+    <script src="assets/plugins/moment/moment.js"></script>
+    <script type="text/javascript" src="assets/plugins/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <script type="text/javascript" src="assets/pages/jquery.xeditable.js"></script>
+
+</body>
+
+<!-- Mirrored from coderthemes.com/ubold_1.5/light/dashboard_2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jun 2016 06:15:10 GMT -->
+
+</html>
